@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #00296b;
+    margin:0;
+    background-image: url(image/shell.png);
+}
+header{
+    justify-content: center;
+    display: flex;
+    background-color: #001247;
+    color: #e2eafc;
+    text-align: center;
+    font-family: Georgia;
+    font-size: larger;
+    padding:20px 0 0 0 ;
+    height: 125px;
+    font-weight: bold;
+}
+h1{
+    font-size: 85px;
+    padding:0 3cm 0 3cm;
+    margin: 0;   
+}
+.imgheader{
+    width: 190px;
+    height: 190px;
+   outline-color: #001247 ; 
+}
+nav{
+    background-color: #001247;
+    height: 90px;
+    text-align: center;
+    font-size: large;
+    font-family:Georgia;    
+    padding:30px 10px 30px 10px;
+    margin:0;
+}
+nav a{
+    outline-style: solid;
+    outline-color:#abc4ff;
+    padding:20px;
+    margin:15px;
+    color:#001247;
+    background-color:#ccdbfd;
+    border-radius: 20%;
+    border-top: 10px;
+}
+nav a:hover{
+    background-color: #ffee99;
+    color: #001247;
+}
+.title {
+    width: 5cm;
+    height: 1.5cm;
+    padding: 3px;
+    background-color:#e2eafc;
+    background-image: url(image/background.jpg);
+    margin: 0.5cm 0 0.3cm 1cm;
+    outline-style: solid;
+    outline-color: #fdc500;
+    border-width: medium;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title p{
+    font-family: Georgia;
+    font-size: 25px;
+    color: #00296b;
+    margin: 5px;
+   
+}
+.skills{
+    margin-top: 20px;
+    display: flex;
+    padding: 20px;
+    gap: 3cm;
+}
+.skills img{
+    width: 175px;
+    height: auto;
+    border-radius: 10%;
+}
+.title04{
+    background-image: url(image/background.jpg);
+    width: 6cm;
+    height: 1.5cm;
+    padding: 0;
+    background-color: #e2eafc;
+    margin-left: 1cm;
+    outline-style: solid;
+    outline-color: #fdc500;
+    border-radius: 2em;
+    border-width: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title04 p{
+    font-family: Georgia;
+    font-size: 25px;
+    color: #00296b;
+    margin: 0;
+}
+.id03{
+    justify-content: center;
+    background-image: url(image/300.jpg);
+    background-size:100%;
+    background-color: #ccdbfd;
+    border-radius: 2em;
+    margin: 25px;
+    display: flex;
+    align-items: center;   
+}
+.id{
+    justify-content: center;  
+    background-color: #ccdbfd;
+    border-radius: 2em;
+    margin: 25px;
+    display: flex;
+    align-items: center;    
+}
+.photo{
+    padding-left: 0.7cm;
+    padding-top: 0.7cm;
+    padding-left: 50px;
+    padding-right: 1.5cm;
+}
+img{
+    width: 250px;
+    height: auto;
+    border-radius: 10%;
+    outline-style: solid;
+    outline-color: #ffee99;   
+}
+.photo p{
+    text-align: center;
+    font-family: 標楷體;
+    font-size: larger;
+    font-weight: bolder;
+    color: #001247;
+}
+.id01 span{
+    font-size: x-large;
+    font-family: Georgia;
+    color: #001247;
+    font-weight: bold;
+}
+.id01 p{
+    font-size:30px;
+    font-family: Georgia;
+    color: #00296b;
+    
+}
+.id02 p{
+    font-size: x-large;
+    font-family: Georgia;
+    color: #00296b;
+    padding-right: 50px;
+    line-height: 1.5cm;
+}
+.photo05{
+    display: flex;
+    padding: 20px;
+    gap: 0.5cm;
+}
+.title05 {
+    width: 5cm;
+    height: 1.5cm;
+    padding: 3px;
+    background-color:#e2eafc;
+    background-image: url(image/background.jpg);
+    margin: 0.5cm 0 0.3cm 5cm;
+    outline-style: solid;
+    outline-color: #001247;
+    border-width: medium;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title05 p{
+    
+    font-family: Georgia;
+    font-size: 25px;
+    color: #00296b;
+    margin: 0;
+}
+footer{
+    background-color: #ffff24;
+    color: #444444;
+    text-align: center;
+    padding: 10px;
+    display: flex;   
+}
+.icon img{
+    width: 2cm;
+    height: 2cm;
+    border-radius: 3em;
+    justify-content: center;
+}
+.icon{
+    display: flex;
+    gap:3cm;
+    padding:0.2cm 0 0 4cm;
+}
+.imgani{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+/*圓餅圖*/
+@property --percentage{
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+}
+@keyframes pieAni {
+    from {
+      --percentage: 0;
+    }
+} 
+.pie {
+    width: 150px;
+    aspect-ratio: 1;
+    display: inline-grid;
+    place-content: center;
+    margin: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+}
+.pie::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%; 
+    inset: 0;  
+    background: conic-gradient(var(--color) calc(var(--percentage) * 1%),#0000 0%), #eee;
+    -webkit-mask-image: radial-gradient(farthest-side,#0000 calc(100% - 10px),#000 calc(100% - 10px));
+    mask-image: radial-gradient(farthest-side,#0000 calc(100% - 10px),#000 calc(100% - 10px));
+}
+  .pie.ani{
+    animation-name: pieAni;
+    animation-duration: 8s;
+    animation-fill-mode: both;
+    margin-top: 1cm;
+}
+/*標題彈跳動畫*/
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+.bounce {
+    animation: bounce 1.5s ease-in-out; 
+    animation-iteration-count: 2; 
+}
+/*淡入動畫*/
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.zoom-in {
+    opacity: 0;
+    animation: zoomIn 3s ease-out forwards;
+}
